@@ -1,7 +1,7 @@
 import tabula
 from tabula import read_pdf
 
-df = tabula.read_pdf('MGLU_ER_3T20_POR.pdf', pages = 5, lattice = True)
+df = tabula.read_pdf('nome_do_arquivo.pdf', pages = 5, lattice = True) 
 tabela = df[0]
 tabela = tabela.dropna(how = "all")
 tabela = tabela.dropna(how = "all", axis = 1)
